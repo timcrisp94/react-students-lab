@@ -1,14 +1,15 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import Starships from './pages/Starships/Starships'
+import StarshipList from './pages/StarshipList/StarshipList'
 
 function App() {
   
   return (
     <>
       <h1>hi</h1>
+      <a href="/starships">Starship List</a>
       <Routes>
-        <Route path='/starships' element={<Starships />} /> 
+        <Route path='/starships' element={<StarshipList />} /> 
       </Routes>
     </>
   );
